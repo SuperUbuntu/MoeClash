@@ -40,6 +40,7 @@ import com.tencent.mmkv.MMKV
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
@@ -76,7 +77,11 @@ class App : Application() {
         val appSettingsStorage: AppSettingsStore = koinApp.koin.get()
         AppLanguageManager.apply(appSettingsStorage.appLanguage.value)
 
-        extractGeoFiles()
+        startupScope.launch {
+            withContext(Dispatchers.IO) {
+                extractGeoFiles()
+            }
+        }
         val featureStore: FeatureStore = koinApp.koin.get()
         featureStore.syncAppVersion(BuildConfig.VERSION_CODE)
         scheduleDeferredStartupTasks(koinApp.koin, featureStore)
