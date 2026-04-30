@@ -1,0 +1,33 @@
+<Settings Page>
+Settings = {
+    Title = "Settings"
+
+    Section = {
+        UiSettings = "UI Settings"
+        More = "More"
+    }
+
+    UiSettings = {
+        App = "App"
+        AppSummary = "Appearance · Language · Theme"
+        Network = "Network"
+        NetworkSummary = "DNS · Port · Inbound"
+        Override = "Override"
+        OverrideSummary = "Rule Override"
+        MetaFeatures = "Meta Features"
+        MetaFeaturesSummary = "Meta Extensions"
+    }
+
+    More = {
+        Lab = "Lab"
+        LabSummary = "Sub-Store · Experiments"
+        Logs = "Logs"
+        LogsSummary = "Runtime Logs"
+        About = "About"
+        AboutSummary = "Version & License"
+    }
+
+    Error = {
+        WebviewFailed = "Unable to open WebView: %s"
+    }
+}

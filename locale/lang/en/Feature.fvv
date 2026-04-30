@@ -1,0 +1,48 @@
+<Feature Page>
+Feature = {
+    Title = "Feature Management"
+
+    ServiceStatus = {
+        Section = "Service Status"
+        Running = "Service running: %s"
+        NeedExtension = "Extension required"
+        NeedSubStore = "Sub-Store resources required"
+        NotRunning = "Service not running"
+        SwitchStartSubStore = "Start Sub-Store Service"
+        AllowLan = "Allow LAN Access"
+        AllowLanSummary = "Allow LAN devices to access Sub-Store"
+        AutoCloseMode = "Auto Close Mode"
+        AutoCloseModeSummary = "Select service auto close time, long running will consume more performance"
+        AutoCloseModeAlwaysOn = "Always On"
+        AutoCloseMode5Min = "5 minutes"
+        AutoCloseMode10Min = "10 minutes"
+        AutoClosed = "Sub-Store auto closed"
+        AutoCloseModeDisabled = "Disabled"
+    }
+
+    Panel = {
+        Section = "Panel Selection"
+        SelectPanel = "Select Panel"
+        Unknown = "Unknown Panel"
+    }
+
+    SubStore = {
+        SectionHint = "Sub-Store resource download, both extension and static resources are required. After installing extension for the first time, please restart the app"
+        ExtensionInstalled = "Extension Installed"
+        ExtensionInstall = "Install Extension"
+        JavetAvailable = "Javet library available, click to refresh status"
+        JavetPending = "Extension installed, Javet pending extraction, click to refresh status"
+        DownloadHint = "Click to download extension"
+        DownloadResources = "Download Resources"
+        DownloadResourcesSummary = "Download frontend and backend resources at once"
+        Not32Bit = "Sub-Store does not support 32-bit devices"
+        InstallExtension = "Please install extension first"
+        DownloadSubStoreFirst = "Please download Sub-Store resources first"
+        JavetNotReady = "Javet library not ready, please ensure extension is properly installed"
+        FrontendDownloadSuccess = "Sub-Store frontend downloaded"
+        FrontendDownloadFailed = "Sub-Store frontend download failed"
+        BackendDownloadSuccess = "Sub-Store backend downloaded"
+        BackendDownloadFailed = "Sub-Store backend download failed"
+        DownloadError = "Download error: %s"
+    }
+}

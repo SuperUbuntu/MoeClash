@@ -1,0 +1,6 @@
+<Util>
+Util = {
+    Error = {
+        UnknownError = "Unknown error"
+    }
+}

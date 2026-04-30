@@ -1,0 +1,54 @@
+<Home Page>
+Home = {
+    Title = "YumeBox"
+
+    Message = {
+        ConfigSwitched = "Config switched"
+        ConfigSwitchFailed = "Config switch failed: %s"
+        Preparing = "Preparing..."
+        StartFailed = "Start failed: %s"
+        StopFailed = "Stop failed: %s"
+    }
+
+    Control = {
+        HintAddProfile = "Please add a profile first"
+        HintEnableProfile = "Please enable a profile in Config page first"
+    }
+
+    NodeInfo = {
+        Node = "Node"
+        Delay = "Delay"
+        Unknown = "Unknown"
+        DelayValue = "%dms"
+    }
+
+    Traffic = {
+        UpShort = "UP"
+        DownShort = "DOWN"
+        NoProfile = "No Profile"
+    }
+
+    IpInfo = {
+        ExitIp = "Exit IP"
+    }
+
+    Status = {
+        Connecting = "Connecting"
+        Disconnecting = "Disconnecting"
+        Running = "Running"
+        TapToStart = "Tap to start"
+    }
+
+    Control = {
+        HintAddProfile = "Please add a profile first"
+        HintEnableProfile = "Please enable a profile in Config page first"
+        Start = "Start"
+        Stop = "Stop"
+    }
+
+    ProxyMode = {
+        Vpn = "VPN"
+        Tun = "TUN"
+        Http = "HTTP"
+    }
+}
