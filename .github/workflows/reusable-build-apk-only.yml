@@ -98,6 +98,11 @@ jobs:
             echo "key.alias=${{ secrets.SIGNING_KEY_ALIAS }}" >> signing.properties
             echo "key.password=${{ secrets.SIGNING_KEY_PASSWORD }}" >> signing.properties
             echo "keystore.path=release.keystore" >> signing.properties
+          elif [ -f release.keystore ]; then
+            echo "keystore.password=moeclash" > signing.properties
+            echo "key.alias=moeclash" >> signing.properties
+            echo "key.password=moeclash" >> signing.properties
+            echo "keystore.path=release.keystore" >> signing.properties
           fi
 
       - name: Generate locale sources
