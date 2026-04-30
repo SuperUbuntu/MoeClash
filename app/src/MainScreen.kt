@@ -69,7 +69,7 @@ import top.yukonga.miuix.kmp.basic.Scaffold
 import top.yukonga.miuix.kmp.theme.MiuixTheme
 
 @Composable
-@Destination<RootGraph>
+@Destination<RootGraph>(start = true)
 fun MainScreen(
     navigator: DestinationsNavigator,
     initialPage: Int = 0,
